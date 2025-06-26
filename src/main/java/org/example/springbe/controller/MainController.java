@@ -17,7 +17,7 @@ public class MainController {
     public MoviesDto hello() {
         MoviesDto movies = new MoviesDto();
         MovieDto movieDto = new
-                MovieDto(1,"testMovie","http://54.180.79.104:8080/images/t1.png","summaryTest");
+                MovieDto(1,"testMovie","https://sample-elb-back-18670419.ap-northeast-2.elb.amazonaws.com/images/t1.png","summaryTest");
                 List<MovieDto> moviesList = new ArrayList<>();
         moviesList.add(movieDto);
         movies.setMovies(moviesList);
